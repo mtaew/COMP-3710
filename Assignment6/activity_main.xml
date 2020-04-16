@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:background="#9acd32"/>
+
+    <TextView
+        android:id="@+id/dataHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#cd5c5c"
+        android:text="Input Data" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/dayIn"
+            android:hint="Day"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/monthIn"
+            android:hint="Month"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/yearIn"
+            android:hint="Year"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/priceIn"
+            android:hint="Amount"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/itemIn"
+            android:hint="Category"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/addUI"
+            android:layout_width="210dp"
+            android:layout_height="25dp"
+            android:background="#7cfc00"
+            android:text="+" />
+        <Button
+            android:id="@+id/subUI"
+            android:layout_width="210dp"
+            android:layout_height="25dp"
+            android:background="#b22222"
+            android:text="-" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/filterHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#cd5c5c"
+        android:text="Filter History" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#95A5A6">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Filter by date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Initial date: " />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Day" />
+        <EditText
+            android:id="@+id/initialDay"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Month" />
+        <EditText
+            android:id="@+id/initialMonth"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Year" />
+        <EditText
+            android:id="@+id/initialYear"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="To" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Final date: " />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Day" />
+        <EditText
+            android:id="@+id/finalDay"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Month" />
+        <EditText
+            android:id="@+id/finalMonth"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Year" />
+        <EditText
+            android:id="@+id/finalYear"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#95A5A6">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Filter by Amount" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Initial amount: " />
+        <EditText
+            android:id="@+id/initialAmount"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="To" />
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Final amount: " />
+        <EditText
+            android:id="@+id/finalAmount"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/filterUI"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Filter" />
+        <Button
+            android:id="@+id/clearFilterUI"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Clear Filter" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/historyTop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#cd5c5c"
+        android:text="History" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <TableLayout
+            android:id="@+id/historyTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+            <TableRow
+                android:id="@+id/row"
+                android:background="#4fc3f7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Amount" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Category" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
